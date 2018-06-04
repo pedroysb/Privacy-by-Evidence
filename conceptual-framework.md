@@ -7,7 +7,7 @@
 <div class="figure">
   <center>
   <img src="figs/conceptualFramework.png" alt="Key concepts when dealing with privacy." />
-  <p class="caption">Figure 1: Key concepts when dealing with privacy.</span></p>
+  <p class="caption">Figure 1: Key concepts when dealing with privacy.</p>
   </center>
 </div>
 
@@ -26,7 +26,7 @@
 <div class="figure">
   <center>
   <img src="figs/participants.png" alt="Possible participants when developing a privacy-friendly application." />
-  <p class="caption">Figure 2: Possible participants when developing a privacy-friendly application.</span></p>
+  <p class="caption">Figure 2: Possible participants when developing a privacy-friendly application.</p>
   </center>
 </div>
 
@@ -231,3 +231,5 @@
 <h2 id="security">Security</h2>
 <p>Despite the focus in privacy, it is necessary to notice the fact that the security of the system is also vitally important. It is known that privacy is a sub-area of security, more specifically, in confidentiality. In fact, it is very common to see even professionals of Information Technology mixing the concepts between security and privacy. However, more recently, research on privacy are taking different directions than research on security. For example, data analysis for infering human behavior is considered a hot topic in privacy, whereas software vulnerabilities is a hot topic in security.</p>
 <p>A system with security vulnerabilities transitively compromises the data privacy and if an attacker seizes control of the application, the privacy will be at risk. To address these concerns, it is necessary the inclusion of practices used in security assurance methodologies, such as the execution of penetration testing to detect vulnerabilities in the involved elements. To ensure that privacy is present in the whole communication process, it is necessary to take preventive security measures, such as encrypting the data in transit and using signed certificates to avoid man-in-the-middle attacks (MiTM) <span class="citation">(Stallings and Brawn 2015)</span>.</p>
+
+[Back to index](https://pedroysb.github.io/Privacy-by-Evidence)
