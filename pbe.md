@@ -198,3 +198,5 @@
     <td colspan="5"><u>References</u>: <a href="https://pedroysb.github.io/Privacy-by-Evidence/case1">Case Study I</a> </td>
   </tr>
 </table>
+
+[Back to index](https://pedroysb.github.io/Privacy-by-Evidence)
