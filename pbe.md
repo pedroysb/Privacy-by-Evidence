@@ -68,100 +68,96 @@
 <h2 id="documentation">Documentation</h2>
 <p>Table 2 shows a framework for the checklist with the possible artifacts to be generated in each activity of the methodology. A goal of the privacy team may be to supply these artifacts and fill the <em>Supplied?</em> column with check marks (&#9989;).</p>
 
-<table>
-<caption>Table 2: Framework for the checklist of the artifacts to be produced by <em>PbE</em>.<span data-label="tab:checklist"></span></caption>
-<tbody>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">Engagement Report</td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">Datasets</td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">Summary of Norms</td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">Implementation of Norms</td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">Compliance Proofs</td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">Utilities List</td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">Perception Questionnaires</td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">Perception Report</td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">Privacy Concerns</td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">Adversary Model</td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">Privacy Policy</td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">Summary of Techniques</td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">Techniques Report</td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">Implementation of Techniques</td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">New Utilities List</td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">Summary of Attacks</td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">Attack Scripts</td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">Attacks Report</td>
-<td align="left"></td>
-</tr>
-</tbody>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-yw4l{vertical-align:top}
+</style>
+<table class="tg">
+  <caption>Table 2: Framework for the checklist of the artifacts to be produced by <em>PbE</em>.<span data-label="tab:checklist"></span></caption>
+  <tr>
+    <th class="tg-yw4l"><span style="font-weight:bold">Activity</span></th>
+    <th class="tg-yw4l"><span style="font-weight:bold">Artifact</span></th>
+    <th class="tg-yw4l"><span style="font-weight:bold">Supplied?</span></th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l" rowspan="2">Identify the Application Context and Data Formats</td>
+    <td class="tg-yw4l">Engagement Report</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Datasets</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l" rowspan="3">Check Compliance with Norms and Legislations</td>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l" rowspan="6"></td>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l" rowspan="4"></td>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l" rowspan="3">Evaluate Potential Attacks</td>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Attacks Report</td>
+    <td class="tg-yw4l"></td>
+  </tr>
 </table>
 
 <p>During the development process, the satisfability of privacy requirements and the generation of evidences and artifacts may be coupled into <em>User Stories</em>, as well as the definition of <em>Acceptance Criterias</em>.</p>
