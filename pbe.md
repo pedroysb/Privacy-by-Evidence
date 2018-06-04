@@ -71,9 +71,9 @@
 <table>
   <caption>Table 2: Framework for the checklist of the artifacts to be produced by <em>PbE</em>.<span data-label="tab:checklist"></span></caption>
   <tr>
-    <th><b>Activity</b></th>
-    <th><b>Artifact</b></th>
-    <th><b>Supplied?</b></th>
+    <td align="center" style='font-weight:bold;'>Activity</td>
+    <td align="center" style='font-weight:bold;'>Artifact</td>
+    <td align="center" style='font-weight:bold;'>Supplied?</td>
   </tr>
   <tr>
     <td rowspan="2">Identify the Application Context and Data Formats</td>
@@ -86,66 +86,66 @@
   </tr>
   <tr>
     <td rowspan="3">Check Compliance with Norms and Legislations</td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
+    <td>Summary of Norms</td>
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td rowspan="6"></td>
-    <td></td>
+    <td>Implementation of Norms</td>
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
+    <td>Compliance Proofs</td>
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
+    <td rowspan="6">Identify Utilities and Risk Assessment</td>
+    <td>Utilities List</td>
     <td></td>
   </tr>
   <tr>
-    <td></td>
+    <td>Perception Questionnaires</td>
     <td></td>
   </tr>
   <tr>
-    <td rowspan="4"></td>
+    <td>Perception Report</td>
     <td></td>
+  </tr>
+  <tr>
+    <td>Privacy Concerns</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Adversary Model</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Privacy Policy</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td rowspan="4">Evaluate and Apply Privacy Techniques</td>
+    <td>Summary of Techniques</td>
     <td ></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
+    <td>Techniques Report</td>
     <td></td>
   </tr>
   <tr>
+    <td>Implementation of Techniques</td>
     <td></td>
+  </tr>
+  <tr>
+    <td>New Utilities List</td>
     <td></td>
   </tr>
   <tr>
     <td rowspan="3">Evaluate Potential Attacks</td>
-    <td></td>
+    <td>Summary of Attacks</td>
     <td></td>
   </tr>
   <tr>
-    <td></td>
+    <td>Attack Scripts</td>
     <td></td>
   </tr>
   <tr>
@@ -176,56 +176,32 @@
 
 <p>Table 3 describes a sheet for the evidence <span class="math inline"><em>E</em>1</span>, making it easier for the participants of the project to relate it to the corresponding privacy goals and concerns. Every evidence has an identification and a reference to the <em>PbE</em> activity that generated such evidence, enabling the traceability into the corresponding artifacts and the possibility to provide visibility and transparency, according to the sixth principle of <em>PbD</em>. The description of an evidence provides information for how the evidence fulfills its driving goals. It may also contain links with more details regarding the provided evidence, status, review date, and an evidence weight. Some evidences may be more valuable than others and therefore, we encourage teams to choose the weight using a voting system similar to Scrum poker <span class="citation">(Molokken-Ostvold, Haugen, and Benestad 2008)</span>.</p>
 
-<p><span>p<span>0.4cm</span>|p<span>5.0cm</span>|p<span>1.1cm</span>|p<span>2.1cm</span>|p<span>1.1cm</span></span></p>
-
 <table>
-<caption>Table 3: Sheet for the evidence <span class="math inline"><em>E</em>1</span>. Implementation of the privacy technique of noise addition.<span data-label="tab:e1smartmetering"></span></caption>
-  
-<tbody>
-<tr class="odd">
-<td align="left"><strong>E1</strong></td>
-</tr>
-</tbody>
+  <caption>Table 3: Sheet for the evidence <span class="math inline"><em>E</em>1</span>. Implementation of the privacy technique of noise addition.</caption>
+  <tr>
+    <td colspan="2" align="left" style='font-weight:bold;'>E1</td>
+    <td colspan="2" align="left" style='font-weight:bold;'>Noise addition has been implemented</td>
+    <td colspan="2" align="left" style='font-weight:bold;'>Status:</td>
+    <td colspan="2" align="left" style='font-weight:bold;'>Review Date:</td>
+    <td colspan="2" align="left" style='font-weight:bold;'>Weight:</td>
+  </tr>
+  <tr>
+    <td colspan="2" align="left"></td>
+    <td colspan="2" align="left"></td>
+    <td colspan="2" align="left">Done</td>
+    <td colspan="2" align="left">February 2015</td>
+    <td colspan="2" align="left">8</td>
+  </tr>
+  <tr>
+    <td><i>PbE Activity</i>: Evaluate and Apply Privacy Techniques</td>
+  </tr>
+  <tr>
+    <td><i>Driven by</i>: G1 → S1 → G2; <i>In context of</i>: C1; <i>Assumptions</i>: As1</td>
+  </tr>
+  <tr>
+    <td><u>Description</u>: A noise addition privacy-preserving scheme for smart metering has been implemented. We claim that the solution meets the needs of consumers (privacy) and power providers (utility). The modification in the communication procedure between a smart meter and the power provider is just the generation of a random number and the addition of this number to the measurement to be sent to the power provider.</td>
+  </tr>
+    <tr>
+    <td><u>References</u>: [Case Study I](https://pedroysb.github.io/Privacy-by-Evidence/case1)</td>
+  </tr>
 </table>
-<p>&amp; &amp;</p>
-<table>
-<caption>Sheet for the evidence <span class="math inline"><em>E</em>1</span>. Implementation of the privacy technique of noise addition.<span data-label="tab:e1smartmetering"></span></caption>
-<tbody>
-<tr class="odd">
-<td align="left"><strong>Status</strong>:</td>
-</tr>
-<tr class="even">
-<td align="left">Done</td>
-</tr>
-</tbody>
-</table>
-<p>&amp;</p>
-<table>
-<caption>Sheet for the evidence <span class="math inline"><em>E</em>1</span>. Implementation of the privacy technique of noise addition.<span data-label="tab:e1smartmetering"></span></caption>
-<tbody>
-<tr class="odd">
-<td align="left"><strong>Review Date</strong>:</td>
-</tr>
-<tr class="even">
-<td align="left">February 2015</td>
-</tr>
-</tbody>
-</table>
-<p>&amp;</p>
-<table>
-<caption>Sheet for the evidence <span class="math inline"><em>E</em>1</span>. Implementation of the privacy technique of noise addition.<span data-label="tab:e1smartmetering"></span></caption>
-<tbody>
-<tr class="odd">
-<td align="left"><strong>Weight</strong>:</td>
-</tr>
-<tr class="even">
-<td align="left">8</td>
-</tr>
-</tbody>
-</table>
-<p><br />
-<br />
-<br />
-<br />
-<br />
-</p>
