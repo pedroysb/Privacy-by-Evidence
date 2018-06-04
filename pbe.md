@@ -27,7 +27,7 @@
 <p>Possible artifacts of this activity may include:</p>
 <ul>
 <li><p><strong>Summary of Norms</strong>: For different regions and companies, it may be the case of having different norms and legislations;</p></li>
-<li><p><strong>Implementation of Norms</strong>: Code parts of norm implementations and unit tests. For example, using information flow annotations in Java <span class="citation">(Myers and Liskov 2000)</span>, it is possible to perform static checking on the fields specified by the <em>Safe Harbor</em> standard, presented in [Norms and Legislation](https://pedroysb.github.io/Privacy-by-Evidence/conceptual-framework#privacy-norms-and-legislation);</p></li>
+<li><p><strong>Implementation of Norms</strong>: Code parts of norm implementations and unit tests. For example, using information flow annotations in Java <span class="citation">(Myers and Liskov 2000)</span>, it is possible to perform static checking on the fields specified by the <em>Safe Harbor</em> standard, presented in <a href="https://pedroysb.github.io/Privacy-by-Evidence/conceptual-framework#privacy-norms-and-legislation">Norms and Legislation</a>;</p></li>
 <li><p><strong>Compliance Proofs</strong>: They are evidences of privacy. For example, certifications are compliance proofs ensuring that the privacy practices meet the constraints defined by the regulatory agencies.</p></li>
 </ul>
 <h2 id="identify-utilities-and-risk-assessment">Identify Utilities and Risk Assessment</h2>
