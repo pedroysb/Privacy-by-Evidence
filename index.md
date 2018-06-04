@@ -16,6 +16,8 @@
 
 [Discussion](https://pedroysb.github.io/Privacy-by-Evidence/discussion)
 
+[References](https://pedroysb.github.io/Privacy-by-Evidence/references)
+
 
 # Support or Contact
 
