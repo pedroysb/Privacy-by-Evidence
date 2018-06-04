@@ -1,5 +1,9 @@
 # Welcome to Privacy by Evidence Website
 
+
+<p>We propose <em>Privacy by Evidence</em> (<em>PbE</em>): a novel methodology that guides the implementation of privacy concepts in applications. This methodology includes risk assessment, mitigations and tests as crucial activities of the development cycle. Given the general impossibility in providing total privacy (<em>i.e.</em>, free of vulnerabilities), we propose to document the mitigations in form of evidences, aiming to increase the confidence. To document the argumentation and evidences, we use the <em>Goal Structuring Notation</em> (<em>GSN</em>) <span class="citation">(<em>Goal Structuring Notation (GSN)</em> 2011)</span>. The effectiveness of <em>PbE</em> was validated through the development of four case studies.</p>
+
+
 [About Privacy by Evidence](https://pedroysb.github.io/Privacy-by-Evidence/pbe)
 
 &nbsp;&nbsp;&nbsp;&nbsp; - [Conceptual Framework](https://pedroysb.github.io/Privacy-by-Evidence/conceptual-framework)
