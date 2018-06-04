@@ -113,10 +113,10 @@
 <tbody>
 <tr class="even">
 <td align="center"></td>
-<td align="center">Record linkage</td>
-<td align="center">Attribute linkage</td>
-<td align="center">Table linkage</td>
-<td align="center">Probabilistic attack</td>
+<td align="center" style='font-weight:bold;'>Record linkage</td>
+<td align="center" style='font-weight:bold;'>Attribute linkage</td>
+<td align="center" style='font-weight:bold;'>Table linkage</td>
+<td align="center" style='font-weight:bold;'>Probabilistic attack</td>
 </tr>
 <tr class="even">
 <td align="center"><span class="math inline"><em>k</em></span>-Anonymity <span class="citation">(Sweeney 2002)</span></td>
