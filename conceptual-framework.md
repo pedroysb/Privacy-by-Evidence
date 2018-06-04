@@ -2,13 +2,17 @@
 
 # Conceptual Framework
 
-<p>In this section we describe the key concepts when dealing with privacy. The goal is to generate a manageable knowledge that is used in our proposed methodology. The conceptual framework with the key concepts identified by us is presented in Figure [fig:conceptualFramework]. We describe these concepts in the next sections.</p>
+<p>In this section we describe the key concepts when dealing with privacy. The goal is to generate a manageable knowledge that is used in our proposed methodology. The conceptual framework with the key concepts identified by us is presented in Figure 1. We describe these concepts in the next sections.</p>
+
 <div class="figure">
-<img src="figs/conceptualFramework.png" alt="Key concepts when dealing with privacy." />
-<p class="caption">Key concepts when dealing with privacy.<span data-label="fig:conceptualFramework"></span></p>
+  <center>
+  <img src="figs/conceptualFramework.png" alt="Key concepts when dealing with privacy." />
+  <p class="caption">Figure 1: Key concepts when dealing with privacy.</span></p>
+  </center>
 </div>
+
 <h2 id="participants">Participants</h2>
-<p>Figure [fig:participants] presents the possible participants/stakeholders in a typical scenario when developing a privacy-friendly application. They are:</p>
+<p>Figure 2 presents the possible participants/stakeholders in a typical scenario when developing a privacy-friendly application. They are:</p>
 <ul>
 <li><p><em>User</em>: The user of the application. Software and sensors may collect sensitive data from the user and transmit to remote servers.</p></li>
 <li><p><em>Product Owner</em>: Entity that represents the executives. Initiates the project, finances it, contracts it out, and benefits from its output(s). Part of an owner responsibility is to have a vision of the requirements, and convey that vision to the development team.</p></li>
@@ -18,10 +22,14 @@
 <li><p><em>Adversary</em>: Entity which seeks to violate the users privacy obtaining sensitive information. May perform many attacks depending on the application context, data format and privacy techniques.</p></li>
 <li><p><em>Data Recipient</em>: Third party who is interested in the published data and may conduct data analysis in sensitive data.</p></li>
 </ul>
+
 <div class="figure">
-<img src="figs/participants.png" alt="Possible participants when developing a privacy-friendly application." />
-<p class="caption">Possible participants when developing a privacy-friendly application.<span data-label="fig:participants"></span></p>
+  <center>
+  <img src="figs/participants.png" alt="Possible participants when developing a privacy-friendly application." />
+  <p class="caption">Figure 2: Possible participants when developing a privacy-friendly application.</span></p>
+  </center>
 </div>
+
 <p>The application environment contains the building blocks of the system, such as sensors, servers, service APIs and databases. It may collect the data from users and publish to third parties or the public. A typical scenario of data collection and publishing is, for example, in health care. Through smart health devices, a hospital collects data from patients and publishes these records to an external medical center. In this example, the devices and the hospital are in the application environment, patients are users, and the medical center is the data recipient. The data analysis conducted at the medical center could be any task from a simple count of the number of men with diabetes to a sophisticated cluster analysis to make health insurances more profitable.</p>
 <p>An adversary model may consider that the data recipient is untrusted. If the environment is trusted and users are willing to provide their personal information, there may be still a problem if the trust is transitive, <em>i.e.</em>, the data recipient be untrusted. In practice, different contexts may have different adversary assumptions and requirements.</p>
 <h2 id="application-context">Application Context</h2>
@@ -82,12 +90,16 @@
 <p>Several techniques may work for the same context and data format. The objective of such techniques is to protect sensitive user data from possible privacy violations. It may also include the provision of the control of what information may be disclosed to the service, data recipients or other users.</p>
 <h2 id="attacks">Attacks</h2>
 <p>A privacy attack is an attempt to expose, steal or gain unauthorized access to sensitive data. Unfortunately, applying norms and privacy techniques may not be enough and real attackers may have success in violating the user privacy when exploiting flaws in the norms and privacy techniques. Thus, before the deployment of the application, privacy engineers may simulate attacks, seeking to explore and fix additional privacy breaches. Attack simulation reports may also assess potential impacts to the organization and suggest countermeasures to reduce risks.</p>
-<p>As an example of attack, even with all explicit identifiers removed, an individual’s name in a public voter list may be linked with his record in a published medical database through the combination of ZIP code, date of birth, and sex, as shown in Figure [fig:linkingAttack]. Each of these attributes does not uniquely identify a user, but their combination, called the quasi-identifier (<span class="math inline"><em>q</em><em>i</em><em>d</em></span> value), often singles out a unique or a small number of users. Research showed that 87% of the U.S. population had reported characteristics that made them unique based on only such quasi-identifiers <span class="citation">(Sweeney 2000)</span>.</p>
+<p>As an example of attack, even with all explicit identifiers removed, an individual’s name in a public voter list may be linked with his record in a published medical database through the combination of ZIP code, date of birth, and sex, as shown in Figure 3. Each of these attributes does not uniquely identify a user, but their combination, called the quasi-identifier (<span class="math inline"><em>q</em><em>i</em><em>d</em></span> value), often singles out a unique or a small number of users. Research showed that 87% of the U.S. population had reported characteristics that made them unique based on only such quasi-identifiers <span class="citation">(Sweeney 2000)</span>.</p>
+
 <div class="figure">
-<embed src="figs/linkingAttack.pdf" />
-<p class="caption">Linking attack to re-identify users <span class="citation">(Sweeney 2002)</span>.<span data-label="fig:linkingAttack"></span></p>
+  <center>
+  <embed src="figs/linkingAttack.png" />
+  <p class="caption">Figure 3: Linking attack to re-identify users <span class="citation">(Sweeney 2002)</span>.</span></p>
+  </center>
 </div>
-<p>In the example of Figure [fig:linkingAttack], the user is re-identified by linking his <span class="math inline"><em>q</em><em>i</em><em>d</em></span>. To perform such linking attacks, the attacker needs two pieces of prior knowledge: the victim’s record in the released data and the <span class="math inline"><em>q</em><em>i</em><em>d</em></span> of the victim. Such knowledge can be obtained by observations. For example, the attacker noticed that his boss was hospitalized, and, therefore, knew that his boss’s medical record would appear in the released patient database. In another example, it is not difficult for an adversary to obtain his boss’s ZIP code, date of birth, and sex, which could serve as the quasi-identifier in linking attacks.</p>
+
+<p>In the example of Figure 3, the user is re-identified by linking his <span class="math inline"><em>q</em><em>i</em><em>d</em></span>. To perform such linking attacks, the attacker needs two pieces of prior knowledge: the victim’s record in the released data and the <span class="math inline"><em>q</em><em>i</em><em>d</em></span> of the victim. Such knowledge can be obtained by observations. For example, the attacker noticed that his boss was hospitalized, and, therefore, knew that his boss’s medical record would appear in the released patient database. In another example, it is not difficult for an adversary to obtain his boss’s ZIP code, date of birth, and sex, which could serve as the quasi-identifier in linking attacks.</p>
 <p>Besides linking attacks, other examples of attacks may include filtering (when applying noise addition techniques), integer factorization and discrete logarithm computation (when applying homomorphic encryption, for example), and side-channel attacks.</p>
 <h2 id="privacy-models">Privacy Models</h2>
 <p>To prevent attacks such as linkage through quasi-identifiers and to quantify the privacy levels, it is necessary to validate the privacy technique using formal privacy models. Sweeney <em>et al</em>. <span class="citation">(Sweeney 2000)</span> propose the notion of <span class="math inline"><em>k</em></span>-anonymity: If one user has some value <span class="math inline"><em>q</em><em>i</em><em>d</em></span>, at least <span class="math inline"><em>k</em> − 1</span> other records also have the value <span class="math inline"><em>q</em><em>i</em><em>d</em></span>. In other words, the minimum equivalence group size on <span class="math inline"><em>Q</em><em>I</em><em>D</em></span> is at least <span class="math inline"><em>k</em></span>. A data set satisfying this requirement is called <span class="math inline"><em>k</em></span>-anonymous. In a <span class="math inline"><em>k</em></span>-anonymous data set, each user is indistinguishable from at least <span class="math inline"><em>k</em> − 1</span> other records with respect to <span class="math inline"><em>Q</em><em>I</em><em>D</em></span>. Consequently, the probability of linking a victim to a specific user through <span class="math inline"><em>Q</em><em>I</em><em>D</em></span> is at most <span class="math inline">1/<em>k</em></span>.</p>
