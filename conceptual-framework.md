@@ -94,8 +94,8 @@
 
 <div class="figure">
   <center>
-  <embed src="figs/linkingAttack.png" />
-  <p class="caption">Figure 3: Linking attack to re-identify users <span class="citation">(Sweeney 2002)</span>.</span></p>
+  <img src="figs/linkingAttack.png" />
+  <p class="caption">Figure 3: Linking attack to re-identify users <span class="citation">(Sweeney 2002)</span>.</p>
   </center>
 </div>
 
@@ -111,131 +111,117 @@
 <table>
 <caption>Privacy Models <span class="citation">(Fung et al. 2010)</span>. A tick represents the coverage of an attack model.<span data-label="tab:privacyModels"></span></caption>
 <tbody>
-<tr class="odd">
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
 <tr class="even">
 <td align="center"></td>
-<td align="center">Record</td>
-<td align="center">Attribute</td>
-<td align="center">Table</td>
-<td align="center">Probabilistic</td>
-</tr>
-<tr class="odd">
-<td align="center"></td>
-<td align="center">linkage</td>
-<td align="center">linkage</td>
-<td align="center">linkage</td>
-<td align="center">attack</td>
+<td align="center">Record linkage</td>
+<td align="center">Attribute linkage</td>
+<td align="center">Table linkage</td>
+<td align="center">Probabilistic attack</td>
 </tr>
 <tr class="even">
 <td align="center"><span class="math inline"><em>k</em></span>-Anonymity <span class="citation">(Sweeney 2002)</span></td>
-<td align="center"></td>
+<td align="center">&#9989;</td>
 <td align="center"></td>
 <td align="center"></td>
 <td align="center"></td>
 </tr>
 <tr class="odd">
 <td align="center">MultiR <span class="math inline"><em>k</em></span>-Anonymity <span class="citation">(M. E. Nergiz, Clifton, and Nergiz 2009)</span></td>
-<td align="center"></td>
+<td align="center">&#9989;</td>
 <td align="center"></td>
 <td align="center"></td>
 <td align="center"></td>
 </tr>
 <tr class="even">
 <td align="center"><span class="math inline"><em>l</em></span>-Diversity <span class="citation">(Machanavajjhala et al. 2007)</span></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">&#9989;</td>
+<td align="center">&#9989;</td>
 <td align="center"></td>
 <td align="center"></td>
 </tr>
 <tr class="odd">
 <td align="center">Confidence Bounding <span class="citation">(Wang, Fung, and Yu 2007)</span></td>
 <td align="center"></td>
-<td align="center"></td>
+<td align="center">&#9989;</td>
 <td align="center"></td>
 <td align="center"></td>
 </tr>
 <tr class="even">
 <td align="center">(<span class="math inline"><em>a</em></span>, <span class="math inline"><em>k</em></span>)-Anonymity <span class="citation">(Wong et al. 2006)</span></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">&#9989;</td>
+<td align="center">&#9989;</td>
 <td align="center"></td>
 <td align="center"></td>
 </tr>
 <tr class="odd">
 <td align="center">(<span class="math inline"><em>X</em></span>, <span class="math inline"><em>Y</em></span>)-Privacy <span class="citation">(Wang and Fung 2006)</span></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">&#9989;</td>
+<td align="center">&#9989;</td>
 <td align="center"></td>
 <td align="center"></td>
 </tr>
 <tr class="even">
 <td align="center">(<span class="math inline"><em>k</em></span>, <span class="math inline"><em>e</em></span>)-Anonymity <span class="citation">(Koudas et al. 2007)</span></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">&#9989;</td>
+<td align="center">&#9989;</td>
 <td align="center"></td>
 <td align="center"></td>
 </tr>
 <tr class="odd">
 <td align="center">(<span class="math inline"><em>ϵ</em></span>, <span class="math inline"><em>m</em></span>)-Anonymity <span class="citation">(Li, Tao, and Xiao 2008)</span></td>
 <td align="center"></td>
-<td align="center"></td>
+<td align="center">&#9989;</td>
 <td align="center"></td>
 <td align="center"></td>
 </tr>
 <tr class="even">
 <td align="center">Personalized Privacy <span class="citation">(Xiao and Tao 2006)</span></td>
 <td align="center"></td>
-<td align="center"></td>
+<td align="center">&#9989;</td>
 <td align="center"></td>
 <td align="center"></td>
 </tr>
 <tr class="odd">
 <td align="center"><span class="math inline"><em>t</em></span>-Closeness <span class="citation">(Ninghui, Tiancheng, and Venkatasubramanian 2007)</span></td>
 <td align="center"></td>
+<td align="center">&#9989;</td>
 <td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">&#9989;</td>
 </tr>
 <tr class="even">
 <td align="center"><span class="math inline"><em>δ</em></span>-Presence <span class="citation">(M. E. Nergiz, Clifton, and Nergiz 2009)</span></td>
 <td align="center"></td>
 <td align="center"></td>
-<td align="center"></td>
+<td align="center">&#9989;</td>
 <td align="center"></td>
 </tr>
 <tr class="odd">
 <td align="center">(<span class="math inline"><em>c</em></span>, <span class="math inline"><em>t</em></span>)-Isolation <span class="citation">(Chawla et al. 2005)</span></td>
+<td align="center">&#9989;</td>
 <td align="center"></td>
 <td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">&#9989;</td>
 </tr>
 <tr class="even">
 <td align="center"><span class="math inline"><em>ϵ</em></span>-Differential Privacy <span class="citation">(Dwork 2006)</span></td>
 <td align="center"></td>
 <td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">&#9989;</td>
+<td align="center">&#9989;</td>
 </tr>
 <tr class="odd">
 <td align="center">(<span class="math inline"><em>d</em></span>, <span class="math inline"><em>γ</em></span>)-Privacy <span class="citation">(Rastogi, Suciu, and Hong 2007)</span></td>
 <td align="center"></td>
 <td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">&#9989;</td>
+<td align="center">&#9989;</td>
 </tr>
 <tr class="even">
 <td align="center">Distributional Privacy <span class="citation">(Blum, Ligett, and Roth 2008)</span></td>
 <td align="center"></td>
 <td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">&#9989;</td>
+<td align="center">&#9989;</td>
 </tr>
 </tbody>
 </table>
