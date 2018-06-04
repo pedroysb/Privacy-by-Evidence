@@ -179,18 +179,11 @@
 <table>
   <caption>Table 3: Sheet for the evidence <span class="math inline"><em>E</em>1</span>. Implementation of the privacy technique of noise addition.</caption>
   <tr>
-    <td rowspan="2" align="left" style='font-weight:bold;'>E1</td>
-    <td rowspan="2" align="left" style='font-weight:bold;'>Noise addition has been implemented</td>
-    <td rowspan="2" align="left" style='font-weight:bold;'>Status:</td>
-    <td rowspan="2" align="left" style='font-weight:bold;'>Review Date:</td>
-    <td rowspan="2" align="left" style='font-weight:bold;'>Weight:</td>
-  </tr>
-  <tr>
-    <td align="left"></td>
-    <td align="left"></td>
-    <td align="left">Done</td>
-    <td align="left">February 2015</td>
-    <td align="left">8</td>
+    <td rowspan="2" align="left">E1</td>
+    <td rowspan="2" align="left">Noise addition has been implemented</td>
+    <td rowspan="2" align="left"><b>Status:</b><br>Done</td>
+    <td rowspan="2" align="left"><b>Review Date:</b><br>February 2015</td>
+    <td rowspan="2" align="left"><b>Weight:</b><br>8</td>
   </tr>
   <tr>
     <td colspan="5"><i>PbE Activity</i>: Evaluate and Apply Privacy Techniques</td>
