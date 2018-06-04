@@ -68,95 +68,89 @@
 <h2 id="documentation">Documentation</h2>
 <p>Table 2 shows a framework for the checklist with the possible artifacts to be generated in each activity of the methodology. A goal of the privacy team may be to supply these artifacts and fill the <em>Supplied?</em> column with check marks (&#9989;).</p>
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-.tg .tg-yw4l{vertical-align:top}
-</style>
-<table class="tg">
+<table>
   <caption>Table 2: Framework for the checklist of the artifacts to be produced by <em>PbE</em>.<span data-label="tab:checklist"></span></caption>
   <tr>
-    <th class="tg-yw4l"><span style="font-weight:bold">Activity</span></th>
-    <th class="tg-yw4l"><span style="font-weight:bold">Artifact</span></th>
-    <th class="tg-yw4l"><span style="font-weight:bold">Supplied?</span></th>
+    <th><b>Activity</b></th>
+    <th><b>Artifact</b></th>
+    <th><b>Supplied?</b></th>
   </tr>
   <tr>
-    <td class="tg-yw4l" rowspan="2">Identify the Application Context and Data Formats</td>
-    <td class="tg-yw4l">Engagement Report</td>
-    <td class="tg-yw4l"></td>
+    <td rowspan="2">Identify the Application Context and Data Formats</td>
+    <td>Engagement Report</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">Datasets</td>
-    <td class="tg-yw4l"></td>
+    <td>Datasets</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-yw4l" rowspan="3">Check Compliance with Norms and Legislations</td>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l"></td>
+    <td rowspan="3">Check Compliance with Norms and Legislations</td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l"></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l"></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-yw4l" rowspan="6"></td>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l"></td>
+    <td rowspan="6"></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l"></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l"></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l"></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l"></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l"></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-yw4l" rowspan="4"></td>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l"></td>
+    <td rowspan="4"></td>
+    <td></td>
+    <td ></td>
   </tr>
   <tr>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l"></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l"></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l"></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-yw4l" rowspan="3">Evaluate Potential Attacks</td>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l"></td>
+    <td rowspan="3">Evaluate Potential Attacks</td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l"></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">Attacks Report</td>
-    <td class="tg-yw4l"></td>
+    <td>Attacks Report</td>
+    <td></td>
   </tr>
 </table>
 
