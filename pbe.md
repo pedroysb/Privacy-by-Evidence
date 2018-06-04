@@ -195,6 +195,6 @@
     <td colspan="5"><u>Description</u>: A noise addition privacy-preserving scheme for smart metering has been implemented. We claim that the solution meets the needs of consumers (privacy) and power providers (utility). The modification in the communication procedure between a smart meter and the power provider is just the generation of a random number and the addition of this number to the measurement to be sent to the power provider.</td>
   </tr>
     <tr>
-    <td colspan="5"><u>References</u>: [Case Study I](https://pedroysb.github.io/Privacy-by-Evidence/case1)</td>
+    <td colspan="5"><u>References</u>: <a href="https://pedroysb.github.io/Privacy-by-Evidence/case1">Case Study I</a> </td>
   </tr>
 </table>
