@@ -1,5 +1,5 @@
 # Welcome to Privacy by Evidence Website  
-
+<br/>
 ## [About Privacy by Evidence](https://pedroysb.github.io/Privacy-by-Evidence/pbe)
 ### &nbsp;&nbsp;&nbsp;&nbsp; - [Conceptual Framework](https://pedroysb.github.io/Privacy-by-Evidence/conceptual-framework)
 ### &nbsp;&nbsp;&nbsp;&nbsp; - [Related Work](https://pedroysb.github.io/Privacy-by-Evidence/related-work)
@@ -8,8 +8,8 @@
 ## [Case Study III: Lumen Application](https://pedroysb.github.io/Privacy-by-Evidence/case3)
 ## [Case Study IV: Two Factor Authentication System](https://pedroysb.github.io/Privacy-by-Evidence/case4)
 ## [Discussion](https://pedroysb.github.io/Privacy-by-Evidence/discussion)
-
-  
+<br/>
+<br/>
 # Support or Contact
-
+<br/>
 Questions about Privacy by Evidence? Contact the authors [mailto](mailto:pedroyossis@copin.ufcg.edu.br,andrey@computacao.ufcg.edu.br,hyggo@computacao.ufcg.edu.br).
