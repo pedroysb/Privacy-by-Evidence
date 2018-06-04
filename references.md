@@ -203,3 +203,5 @@
 <p>Yao, M. Z., R. E. Rice, and K. Wallis. 2007. “Predicting user concerns about online privacy.” <em>Journal of the American Society for Information Science and Technology</em> 58 (5): 710–22.</p>
 </div>
 </div>
+
+[Back to index](https://pedroysb.github.io/Privacy-by-Evidence)
