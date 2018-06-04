@@ -192,16 +192,16 @@
     <td colspan="2" align="left">February 2015</td>
     <td colspan="2" align="left">8</td>
   </tr>
-  <tr>
+  <tr rowpan="5">
     <td rowpan="5"><i>PbE Activity</i>: Evaluate and Apply Privacy Techniques</td>
   </tr>
-  <tr>
+  <tr rowpan="5">
     <td rowpan="5"><i>Driven by</i>: G1 → S1 → G2; <i>In context of</i>: C1; <i>Assumptions</i>: As1</td>
   </tr>
-  <tr>
+  <tr rowpan="5">
     <td rowpan="5"><u>Description</u>: A noise addition privacy-preserving scheme for smart metering has been implemented. We claim that the solution meets the needs of consumers (privacy) and power providers (utility). The modification in the communication procedure between a smart meter and the power provider is just the generation of a random number and the addition of this number to the measurement to be sent to the power provider.</td>
   </tr>
-    <tr>
+    <tr rowpan="5">
     <td rowpan="5"><u>References</u>: [Case Study I](https://pedroysb.github.io/Privacy-by-Evidence/case1)</td>
   </tr>
 </table>
