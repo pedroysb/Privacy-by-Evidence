@@ -30,59 +30,30 @@
 <p>Regarding the activity of checking compliance with norms and legislations for the energy data, the <em>Brazilian National Agency of Electrical Energy</em> (<em>ANEEL</em>) establishes a normative resolution<a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a> with the following rule of privacy for smart metering: “<em>In the hypothesis of a metering system with a remote communication, the power provider has to adopt procedures and technologies to ensure the security of the data traffic and, specially, of the collected personal information</em>”. In other words, this rule determines that security mechanisms such as encryption and certification must be used.</p>
 <p>In the same article, <em>ANEEL</em> establishes another rule: “<em>It is forbidden for the power provider to disclose to third parties the data collected from consumer units without authorization of the owners</em>”. These rules could help to provide some evidences of privacy, but unfortunately they were suspended by the agency since February 11, 2014. Moreover, even if they come back in the future, it is known that there are possibilities of external hackers to penetrate systems (including the Meter Data Management in the power provider), or internal malicious employees to export the data after a decryption.</p>
 <p>Another rule<a href="#fn5" class="footnoteRef" id="fnref5"><sup>5</sup></a> established by <em>ANEEL</em> is: “<em>The meters must have mass storage capable of storing active and reactive energy data, demand and tension, considering the direct and reverse flow of energy according to the usage, at programmable intervals of 5 (five) to 60 (sixty) minutes</em>”. The granularity of 5 minutes is the important information here. This could help to provide evidences of privacy, however it is known that <em>NIALM</em> algorithms can still identify appliance usages with this granularity. Moreover, this rule is only applied to official and regulated meters. The energy meter used by the LiteMe application is just an additional device that does not have the goal to replace existing traditional meters. Therefore, for many purposes, this device has the ability to collect and send data with time intervals of 1 second.</p>
-<p>Despite the lack of norms and legislation to be applied in this application, the study and the summary of possibilities suggest a concern for privacy in this project, generating this, an evidence of privacy. Table [tab:e1smartmetering] describes a sheet for this evidence <span class="math inline"><em>E</em>1</span> and Figure 8 presents the first part of the <em>GSN</em> for the privacy case of a smart metering application. This representation is still to grow, according to the normal software evolution and our proposed methodology. In this application context, assuming that security assurances have been taken, there is an argument that the privacy is being preserved according to the provided evidences. For now, there is only one evidence provided (<span class="math inline"><em>E</em>1</span>).</p>
+<p>Despite the lack of norms and legislation to be applied in this application, the study and the summary of possibilities suggest a concern for privacy in this project, generating this, an evidence of privacy. Table 4 describes a sheet for this evidence <span class="math inline"><em>E</em>1</span> and Figure 8 presents the first part of the <em>GSN</em> for the privacy case of a smart metering application. This representation is still to grow, according to the normal software evolution and our proposed methodology. In this application context, assuming that security assurances have been taken, there is an argument that the privacy is being preserved according to the provided evidences. For now, there is only one evidence provided (<span class="math inline"><em>E</em>1</span>).</p>
 
-<p><span>p<span>0.7cm</span>|p<span>7.5cm</span>|p<span>1.2cm</span>|p<span>2.2cm</span>|p<span>1.2cm</span></span></p>
 <table>
-<caption>Sheet for the evidence <span class="math inline"><em>E</em>1</span>. Norms and legislations for smart metering.<span data-label="tab:e1smartmetering"></span></caption>
-<tbody>
-<tr class="odd">
-<td align="left"><strong>E1</strong></td>
-</tr>
-</tbody>
+  <caption>Table 4: Sheet for the evidence <span class="math inline"><em>E</em>1</span>. Norms and legislations for smart metering.</caption>
+  <tr>
+    <td align="left">E1</td>
+    <td align="left">Norms and legislations have been studied</td>
+    <td align="left"><b>Status:</b><br>Done</td>
+    <td align="left"><b>Review Date:</b><br>August 2015</td>
+    <td align="left"><b>Weight:</b><br>1</td>
+  </tr>
+  <tr>
+    <td colspan="5"><i>PbE Activity</i>: Check Compliance with Norms and Legislation</td>
+  </tr>
+  <tr>
+    <td colspan="5"><i>Driven by</i>: G1 → G2; <i>In context of</i>: C1; <i>Assumptions</i>: As1</td>
+  </tr>
+  <tr>
+    <td colspan="5"><u>Description</u>: Possible norms and legislations that could be applied for the smart metering application have been studied and summarized. In Brazil, it was not found any norm or law dealing with the collection, storage and processing of energy metering data that could affect the design of the LiteMe application. There are norms proposed by the <i>ANEEL</i>, but only applied to official and regulated meters.</td>
+  </tr>
+    <tr>
+    <td colspan="5"><u>References</u>: <a href="https://pedroysb.github.io/Privacy-by-Evidence/case1#norms-and-legislation">Norms and Legislation</a> </td>
+  </tr>
 </table>
-<p>&amp; &amp;</p>
-<table>
-<caption>Sheet for the evidence <span class="math inline"><em>E</em>1</span>. Norms and legislations for smart metering.<span data-label="tab:e1smartmetering"></span></caption>
-<tbody>
-<tr class="odd">
-<td align="left"><strong>Status</strong>:</td>
-</tr>
-<tr class="even">
-<td align="left">Done</td>
-</tr>
-</tbody>
-</table>
-<p>&amp;</p>
-<table>
-<caption>Sheet for the evidence <span class="math inline"><em>E</em>1</span>. Norms and legislations for smart metering.<span data-label="tab:e1smartmetering"></span></caption>
-<tbody>
-<tr class="odd">
-<td align="left"><strong>Review Date</strong>:</td>
-</tr>
-<tr class="even">
-<td align="left">August 2015</td>
-</tr>
-</tbody>
-</table>
-<p>&amp;</p>
-<table>
-<caption>Sheet for the evidence <span class="math inline"><em>E</em>1</span>. Norms and legislations for smart metering.<span data-label="tab:e1smartmetering"></span></caption>
-<tbody>
-<tr class="odd">
-<td align="left"><strong>Weight</strong>:</td>
-</tr>
-<tr class="even">
-<td align="left">1</td>
-</tr>
-</tbody>
-</table>
-<p><br />
-<br />
-<br />
-<br />
-<br />
-</p>
 
 <div class="figure">
 <center>
