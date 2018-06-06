@@ -9,16 +9,20 @@
 <p>Smart meters are devices that measure electricity consumption in real time and transmit this data to remote servers. These devices may represent a turning point in the energy industry and foster the development of new services and improvement of existing ones. In a typical smart metering architecture, the analysis of the collected data can help power providers to learn how to better manage the areas within their networks. Thus, helping to understand the business benefits of investing in Smart Grids. Figure 6 presents a smart metering system architecture.</p>
 
 <div class="figure">
+<center>
 <img src="figs/architecture.png" />
 <p class="caption">Figure 6: Smart metering system architecture and data usage applications <span class="citation">(Waters 2006)</span>.</p>
+</center>
 </div>
 
 <p>Despite the benefits, smart meters raise concerns about the privacy of consumers. Electricity data may contain private sensitive information, such as which appliances are being used, if the house is empty, when people take a shower or shut down the television. The privacy issues are some of the main reasons why smart meters were still not deployed in many countries <span class="citation">(Koehle 2012)</span>. Clearly, there is a trade-off between utility and privacy.</p>
 <p>As an example of the data format, Figure 7 shows a daily profile of a residential consumer.<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a> Using advanced power signature analysis tools, such as the <em>Non-Intrusive Appliance Load Monitoring</em> (<em>NIALM</em>), it is possible to find out private information about the consumer’s lifestyle. Batra <em>et al.</em> <span class="citation">(Batra et al. 2014)</span> designed some methodologies to identify the use of appliances from load profiles. In Figure 7, the appliance with highest wattage and easier to identify is the laundry dryer. If the load monitoring algorithm is running remotely, the consumers may not know that their behaviors are being monitored.</p>
 
 <div class="figure">
+<center>
 <img src="figs/dailyProfile.png" />
 <p class="caption">Figure 7: Residential (black solid) and Laundry Dryer (red dashed) daily profiles with measurements at each 1 minute.</p>
+</center>
 </div>
 
 <p>In a traditional industrial setting, such behavior information is not in principle useful for a power provider. However, currently this type of information is of interest to many businesses that want to identify the profile of a potential consumer of their products and services. Therefore, disclosing such profiles and habits of consumers evokes issues about privacy. Clear rules are needed to protect consumers from misuse of their behavioral data and to avoid that Smart Grids become a new type of Big Brother <span class="citation">(Boccuzzi 2010)</span>. Unfortunately, protection laws may take decades to be applied whereas smart meters are already operational.</p>
@@ -81,8 +85,10 @@
 </p>
 
 <div class="figure">
+<center>
 <img src="figs/gsn-smartmetering1.png" alt="First iteration of the construction of the GSN representation for the privacy case of a smart metering application." />
 <p class="caption">Figure 8: First iteration of the construction of the <em>GSN</em> representation for the privacy case of a smart metering application.</p>
+</center>
 </div>
 
 <h2 id="sec:smrisk">Utilities and Risk Assessment</h2>
@@ -117,8 +123,10 @@ In-home feedback tools: estimated bills, device profiles etc <span class="citati
 <p>In the smart metering privacy literature, it is common to consider the power provider as an adversary (honest, but curious) and, transitively, the data exposure to third parties becomes a threat to privacy too. Therefore, it is resonable to consider the power provider as an adversary and to apply the privacy techniques on the consumers’ side <span class="citation">(Busom et al. 2015; Erkin and Tsudik 2012; Garcia and Jacobs 2010; Backes and Meiser 2014; Kalogridis et al. 2010; McLaughlin, McDaniel, and Aiello 2011; Zhao et al. 2014; Backes and Meiser 2014; Kalogridis et al. 2010; McLaughlin, McDaniel, and Aiello 2011; Zhao et al. 2014)</span>. Figure 9 presents the second iteration of the construction of the <em>GSN</em> representation for this case study. The diagram now considers the adversary model, <em>i.e.</em>, the assumption that the sensor is not an adversary and the strategy to provide mitigations considering that the service is an adversary.</p>
 
 <div class="figure">
+<center>
 <img src="figs/gsn-smartmetering2.png" alt="Second iteration of the construction of the GSN representation for the privacy case of a smart metering application." />
 <p class="caption">Figure 9: Second iteration of the construction of the <em>GSN</em> representation for the privacy case of a smart metering application.</p>
+</center>
 </div>
 
 <h2 id="sec:sm_priv_techniques">Privacy Techniques</h2>
@@ -138,8 +146,10 @@ In-home feedback tools: estimated bills, device profiles etc <span class="citati
 <p>Figure 10 presents the daily profile of Figure 7 masked using this Laplacian noise. Considering that at the end of the month the power provider sums the informed masked values by the consumer, it obtains a value of 133.7977 kWh. The real value is 131.978 kWh. The difference between these values is an error of 1.3788%, less than the maximum allowed error (5%). This error may be less if the consumer does not mask the measurements all the time. Also, if the meter firmware accumulates the sum of the added random numbers and sends that with the last measurement of the month, the error is zero.</p>
 
 <div class="figure">
+<center>
 <img src="figs/maskedDailyProfile.png" />
 <p class="caption">Figure 10: Residential masked daily profile with measurements at each 1 minute.</p>
+</center>
 </div>
 
 <p>The existence of errors in applications of electrical networks are often found nowadays (since these errors should be less than established limits). For example, in Brazil, the INMETRO (National Institute of Metrology, Standardization and Industrial Quality) establishes percentual error limits to measurements for billing purposes. For residential customers (defined as class B), the percentual relative error for active energy must stay between +/- 2%, while for industrial customers (defined as class A), this error must stay between +/-3%. For more information see the ordinance number 375 of September 27, 2011 <span class="citation">(INMETRO 2011)</span>.</p>
@@ -196,15 +206,19 @@ Laundry Dryer &amp; <span class="math inline">∼</span>3500 &amp; 1.077 &amp; 0
 <p>The data used in the next example are measurements collected at each 30 minutes from real residential consumers (anonymised) from Ireland (<em>Commission for Energy Regulation – CER</em>) <span class="citation">(CER 2012)</span>. Suppose that the power provider wants to compute the total consumption in a region with many consumers through time for load monitoring (<em>e.g.</em>, find peak times, leak detection, load forecasting and many other applications). Using a billing period of 1 month and measurements at each 30 minutes, it has <span class="math inline"><em>N</em> = 1488</span> measurements for each consumer during a month with 31 days (March). So, in this experiment, we consider a region with 1488 consumers (thus, the data forms a square matrix). Figure 11 shows the regional profile during March obtained from original consumer profiles versus the regional profile obtained from masked profiles.</p>
 
 <div class="figure">
+<center>
 <img src="figs/regionProfile.png" />
 <p class="caption">Figure 11: Regional profile using original data (blue solid) versus using masked data (red dashed) with measurements of 30 min. The profiles are very similar.</p>
+</center>
 </div>
 
 <p>As depicted in Figure 11, visually there is no difference between the two profiles. However, the obtained errors depend on the population behavior. For example, in a high consumption period the obtained error has a different proportion from the obtained error in a low consumption period. The large errors in Figure 11 were obtained in periods of low consumption (<em>e.g.</em>, during the night), because while consuming less, consumers are still masking their data using a noise level based on the billing period. The blue dashed line in Figure 12 presents the obtained errors through time for this scenario (Figure 11). These errors may be lower if not all consumers decide to mask their data all the time.</p>
 
 <div class="figure">
+<center>
 <img src="figs/regionErrors.png" />
-<p class="caption">Figure 12: Obtained errors for the regional profile using masked profiles versus using filtered profiles. Using filtered profiles implies in better accuracy for load monitoring.</span></p>
+<p class="caption">Figure 12: Obtained errors for the regional profile using masked profiles versus using filtered profiles. Using filtered profiles implies in better accuracy for load monitoring.</p>
+</center>
 </div>
 
 <p>The possibility of having consumers deciding when to send masked (vs. original) measurements is in accordance with the privacy definition mentioned by Stallings <em>et al</em>. <span class="citation">(Stallings and Brawn 2015)</span> and can be implemented through a privacy switch (<em>i.e.</em>, enable or disable the masking). As not all consumers are masking the measurements all the time (making the obtained error to be lower), this implies in a utility improvement.</p>
@@ -328,13 +342,17 @@ Accuracy &amp; &amp; &amp;<br />
 <p>In our simulations, using different configuration scenarios (number of meters, ranging from 1 to 200) to calculate the total consumption in the region, we measured the processing time of each meter (Figure 13) and the aggregator (Figure 14).</p>
 
 <div class="figure">
+<center>
 <img src="figs/SMTimeComparison.png" />
 <p class="caption">Figure 13: Processing time of smart meters in 5 different privacy preserving approaches.</p>
+</center>
 </div>
 
 <div class="figure">
+<center>
 <img src="figs/AGTimeComparison.png" />
 <p class="caption">Figure 14: Processing time of the aggregator in 5 different privacy preserving approaches.</p>
+</center>
 </div>
 
 <p>Each scenario was executed 10 times and the average values were considered. This amount of repetitions were enough to get precise average values. Due to the very low obtained variations, the confidence intervals are being omitted here, except for the aggregation in the approach proposed by Busom <em>et al</em>. <span class="citation">(Busom et al. 2015)</span>, which needs a trial and error mechanism to solve the discrete logarithm problem. The confidence intervals in these cases are of 95%.</p>
@@ -386,8 +404,10 @@ In-home feedback tools: estimated bills, device profiles etc <span class="citati
 </ol>
 
 <div class="figure">
+<center>
 <img src="figs/sensor.png" alt="LiteMe sensor device." />
 <p class="caption">Figure 15: LiteMe sensor device.</p>
+</center>
 </div>
 
 <p>Our focus here is the privacy switch (number 6). This privacy implementation is in accordance with the privacy definition mentioned by Stallings <em>et al</em>. <span class="citation">(Stallings and Brawn 2015)</span>. When the switch is in the disabled position, the meter sends to the remote server the original power measurements. If the switch is in the enabled position, the meter sends to the remote server masked measurements. The pseudorandom number generator used in this implementation uses <span class="math inline">/<em>d</em><em>e</em><em>v</em>/<em>u</em><em>r</em><em>a</em><em>n</em><em>d</em><em>o</em><em>m</em></span>, which is considered cryptographically secure <span class="citation">(“Myths about /dev/urandom” 2018)</span>.</p>
@@ -553,8 +573,10 @@ In-home feedback tools: estimated bills, device profiles etc <span class="citati
 
 
 <div class="figure">
+<center>
 <img src="figs/gsn-smartmetering3.png" alt="Third iteration of the construction of the GSN representation for the privacy case of a smart metering application." />
 <p class="caption">Figure 16: Third iteration of the construction of the <em>GSN</em> representation for the privacy case of a smart metering application.</p>
+</center>
 </div>
 
 <h2 id="potential-attacks">Potential Attacks</h2>
@@ -580,8 +602,10 @@ In-home feedback tools: estimated bills, device profiles etc <span class="citati
 <p>Experiments also showed that coarse-grained measurements (with longer time intervals) implies less filtering efficiency. This is because each measurement becomes less correlated with the adjacent measurements. For the same consumer of the previous example, the Figure 17 presents the mean of the best values of <span class="math inline"><em>P</em></span> (vertical axis) for different granularity of measurements (horizontal axis). As observed for this consumer, using measurement intervals of 36 minutes (or greater) will make filtering attacks ineffective because the best setting is using a <span class="math inline"><em>P</em></span> equals to 0 (<em>i.e</em>, no filtering). This means that with a granularity greater than or equals to 36 minutes, the original profile is more correlated with the masked profile than with the filtered profile. Therefore, after evaluating the experimental results of the filtering attack, we considered this attack as unsuccessful, and we have the evidence of privacy <span class="math inline"><em>E</em>5</span>, as presented in the sheet of Table [tab:e5smartmetering].</p>
 
 <div class="figure">
+<center>
 <img src="figs/filterDifferentGranularity.png" />
 <p class="caption">Figure 17: Filtering parameter (<span class="math inline"><em>P</em></span>) for different measurement granularities. The confidence intervals are of 95%.</p>
+</center>
 </div>
 
 <p><span>p<span>0.7cm</span>|p<span>7.5cm</span>|p<span>1.2cm</span>|p<span>2.2cm</span>|p<span>1.2cm</span></span></p>
@@ -639,42 +663,54 @@ In-home feedback tools: estimated bills, device profiles etc <span class="citati
 <p>We also performed some <em>NIALM</em> attacks and the results were evaluated. Figure 18 presents the workflow of this testing procedure. The noise addition approach is applied in the green task, whereas in the orange boxes, we applied the Improved <em>NIALM</em> using <em>load DIvision and Calibration</em> (<em>INDIC</em>) algorithm <span class="citation">(Batra, Dutta, and Singh 2013)</span>.</p>
 
 <div class="figure">
+<center>
 <img src="figs/nialmWorkflow.png" />
 <p class="caption">Figure 18: Workflow for privacy validation through <em>NIALM</em> attacks.</p>
+</center>
 </div>
 
 
 <p>Figure 19 presents a weekly profile obtained from the popular <em>REDD</em> dataset <span class="citation">(Kolter and Johnson 2011)</span>. In this profile, there are many appliances being used, such as a microwave and a refrigerator. Figure 20 presents the real disaggregated microwave profile. A microwave was chosen as an example because in this profile it is a very characteristic appliance and one of the most difficult to be hidden (since it has many peak variations).</p>
 
 <div class="figure">
+<center>
 <img src="figs/weeklyProfile.png" />
 <p class="caption">Figure 19: Example week obtained from the <em>REDD</em> dataset (measurements are at each 1 minute).</p>
+</center>
 </div>
 
 <div class="figure">
+<center>
 <img src="figs/microwave.png" />
 <p class="caption">Figure 20: Real disaggregated microwave obtained from profile of Figure 19.</p>
+</center>
 </div>
 
 <p>After applying the <em>INDIC</em> algorithm to perform <em>NIALM</em> on the profile from Figure 19, the appliances were disaggregated. Figure 21 presents the predicted microwave profile. As observed, this predicted profile is very similar with the real microwave profile (at least the peak moments and levels are almost the same).</p>
 
 <div class="figure">
+<center>
 <img src="figs/predictedMicrowave.png" />
 <p class="caption">Figure 21: Disaggregated microwave predicted by <em>INDIC</em> over profile of Figure 19.</p>
+</center>
 </div>
 
 <p>We applied our noise addition approach and using an allowed error of (<span class="math inline"><em>e</em><sub><em>a</em></sub></span>) of 5% to mask the aggregated profile from Figure 19, the masked profile from Figure 22 was obtained. Because negative demand values are impossible and <em>NIALM</em> tools can not work with that, we vertically shifted the profile to perform the <em>NIALM</em> attack. This modification was simply the addition of the absolute minimum value to every measurement of the profile, i.e., <span class="math inline">∀<em>c</em> ∈ <em>P</em></span>, we made <span class="math inline"><em>c</em> = <em>c</em> + |<em>m</em><em>i</em><em>n</em>(<em>P</em>)|</span>, where <span class="math inline"><em>P</em></span> is the profile and <span class="math inline"><em>c</em></span> is an individual measurement. For the <em>NIALM</em> algorithm, this procedure should be the same as considering that an appliance which demands <span class="math inline">|<em>m</em><em>i</em><em>n</em>(<em>P</em>)|</span> was always on usage.</p>
 
 <div class="figure">
+<center>
 <img src="figs/weeklyMaskedProfile.png" />
 <p class="caption">Figure 22: Aggregated profile of Figure 19 masked using <span class="math inline"><em>e</em><sub><em>a</em></sub></span> of 5%.</p>
+</center>
 </div>
 
 <p>After applying the same <em>INDIC</em> algorithm to perform the <em>NIALM</em>, we observed that the technique lost significantly its ability to detect appliance usages. Figure 23 presents the predicted microwave profile by the <em>INDIC</em> algorithm applied on the masked profile from Figure 22.</p>
 
 <div class="figure">
+<center>
 <img src="figs/predictedMaskedMicrowave.png" />
 <p class="caption">Figure 23: Disaggregated microwave predicted by <em>INDIC</em> over the masked profile of Figure 22.</p>
+</center>
 </div>
 
 <p>To evaluate the potential of <em>NIALM</em> approaches in detecting appliance usages, Batra <em>et al.</em> <span class="citation">(Batra, Dutta, and Singh 2013)</span> use two metrics: <em>Mean Normalized Error</em> (<em>MNE</em>) and <em>Root Mean Square Error</em> (<em>RMS</em>). Lower values of <em>MNE</em> and <em>RMS</em> imply in better accuracy of the <em>NIALM</em>. Using different configurations, we evaluated the masking approach for the two most significant appliances of the profile from Figure 19, as presented in Table [tab:indicMNE] and Table [tab:indicRMS]. As observed, even using a high utility level and a low obfuscation (choosing a small <span class="math inline"><em>e</em><sub><em>a</em></sub></span>), the noise addition approach still affects significantly the <em>NIALM</em> potential to detect appliance usages (the <em>MNE</em> and <em>RMS</em> values are increased significantly). Therefore, we consider this attack as unsuccessful, and we have the evidence of privacy <span class="math inline"><em>E</em>6</span>, as presented in the sheet of Table [tab:e6smartmetering].</p>
@@ -869,8 +905,10 @@ Refrigerator &amp; 70.17 &amp; 143.34 &amp; 216.79 &amp; 189.67<br />
 <p>After performing the attacks and providing the evidences <span class="math inline"><em>E</em>5</span>, <span class="math inline"><em>E</em>6</span> and <span class="math inline"><em>E</em>7</span>, the <em>GSN</em> representation was expanded to the one presented in Figure 24.</p>
 
 <div class="figure">
+<center>
 <img src="figs/gsn-smartmetering4.png" alt="Fourth iteration of the construction of the GSN representation for the privacy case of a smart metering application." />
-<p class="caption">Figure 24: Fourth iteration of the construction of the <em>GSN</em> representation for the privacy case of a smart metering application.</span></p>
+<p class="caption">Figure 24: Fourth iteration of the construction of the <em>GSN</em> representation for the privacy case of a smart metering application.</p>
+</center>
 </div>
 
 <h2 id="concluding-remarks">Concluding Remarks</h2>
@@ -992,3 +1030,5 @@ Refrigerator &amp; 70.17 &amp; 143.34 &amp; 216.79 &amp; 189.67<br />
 <li id="fn12"><p>Eyedro, eyedro.com<a href="#fnref12">↩</a></p></li>
 </ol>
 </div>
+
+[Back to index](https://pedroysb.github.io/Privacy-by-Evidence)
