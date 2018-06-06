@@ -7,7 +7,7 @@
 <p>Smart Grids are systems that combine the traditional power grid with modern information technologies to enable a more efficient and robust grid. With these systems, power providers can monitor, analyze and control the network and communicate with the consumers to improve the energy quality, reduce energy consumption and cost, and maximize the transparency and reliability of the energy supply chain. In this scenario, a key component on the consumers’ side is the use of smart meters.</p>
 
 <div class="figure">
-<embed src="figs/architecture.png" />
+<img src="figs/architecture.png" />
 <p class="caption">Smart metering system architecture and data usage applications <span class="citation">(Waters 2006)</span>.<span data-label="fig:architecture"></span></p>
 </div>
 
@@ -16,7 +16,7 @@
 <p>As an example of the data format, Figure [fig:dailyProfile] shows a daily profile of a residential consumer.<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a> Using advanced power signature analysis tools, such as the <em>Non-Intrusive Appliance Load Monitoring</em> (<em>NIALM</em>), it is possible to find out private information about the consumer’s lifestyle. Batra <em>et al.</em> <span class="citation">(Batra et al. 2014)</span> designed some methodologies to identify the use of appliances from load profiles. In Figure [fig:dailyProfile], the appliance with highest wattage and easier to identify is the laundry dryer. If the load monitoring algorithm is running remotely, the consumers may not know that their behaviors are being monitored.</p>
 
 <div class="figure">
-<embed src="figs/dailyProfile.png" />
+<img src="figs/dailyProfile.png" />
 <p class="caption">Residential (black solid) and Laundry Dryer (red dashed) daily profiles with measurements at each 1 minute.<span data-label="fig:dailyProfile"></span></p>
 </div>
 
@@ -133,7 +133,7 @@ In-home feedback tools: estimated bills, device profiles etc <span class="citati
 <p>As an example, Figure [fig:dailyProfile] shows a daily profile of a residential consumer. There are 16 appliances in this consumption profile. However, the appliance with highest wattage and easier to identify is the laundry dryer. Assuming the billing period as one month, the total consumption of this consumer during the billing period (one month of 31 days) is 131.978 kWh. Considering a maximal allowed error of 5% for billing purpose, we have 6.5989 kWh. Thus, the variance for a high probability (<em>e.g.</em>, 0.98) of not exceeding this value is <span class="math inline"><em>σ</em><sub><em>e</em><sub><em>o</em></sub></sub><sup>2</sup> = 8.04626</span>. Isolating the scale parameter <span class="math inline"><em>b</em></span> from Equation [eq:lapVar], we have (for measurements at each 1 minute, <span class="math inline"><em>N</em> = 44, 640</span>): <br /><span class="math display">$$b\ =\ \sqrt{\sigma_{e_o}^2 / \left(2 N \right)} \ =\ 0.0094934 \text{ .}$$</span><br /></p>
 
 <div class="figure">
-<embed src="figs/maskedDailyProfile.png" />
+<img src="figs/maskedDailyProfile.png" />
 <p class="caption">Residential masked daily profile with measurements at each 1 minute.<span data-label="fig:maskedDailyProfile"></span></p>
 </div>
 
@@ -192,14 +192,14 @@ Laundry Dryer &amp; <span class="math inline">∼</span>3500 &amp; 1.077 &amp; 0
 <p>The data used in the next example are measurements collected at each 30 minutes from real residential consumers (anonymised) from Ireland (<em>Commission for Energy Regulation – CER</em>) <span class="citation">(CER 2012)</span>. Suppose that the power provider wants to compute the total consumption in a region with many consumers through time for load monitoring (<em>e.g.</em>, find peak times, leak detection, load forecasting and many other applications). Using a billing period of 1 month and measurements at each 30 minutes, it has <span class="math inline"><em>N</em> = 1488</span> measurements for each consumer during a month with 31 days (March). So, in this experiment, we consider a region with 1488 consumers (thus, the data forms a square matrix). Figure [fig:regionalProfile] shows the regional profile during March obtained from original consumer profiles versus the regional profile obtained from masked profiles.</p>
 
 <div class="figure">
-<embed src="figs/regionProfile.png" />
+<img src="figs/regionProfile.png" />
 <p class="caption">Regional profile using original data (blue solid) versus using masked data (red dashed) with measurements of 30 min. The profiles are very similar.<span data-label="fig:regionalProfile"></span></p>
 </div>
 
 <p>As depicted in Figure [fig:regionalProfile], visually there is no difference between the two profiles. However, the obtained errors depend on the population behavior. For example, in a high consumption period the obtained error has a different proportion from the obtained error in a low consumption period. The large errors in Figure [fig:regionalProfile] were obtained in periods of low consumption (<em>e.g.</em>, during the night), because while consuming less, consumers are still masking their data using a noise level based on the billing period. The blue dashed line in Figure [fig:regionErrors] presents the obtained errors through time for this scenario (Figure [fig:regionalProfile]). These errors may be lower if not all consumers decide to mask their data all the time.</p>
 
 <div class="figure">
-<embed src="figs/regionErrors.png" />
+<img src="figs/regionErrors.png" />
 <p class="caption">Obtained errors for the regional profile using masked profiles versus using filtered profiles. Using filtered profiles implies in better accuracy for load monitoring.<span data-label="fig:regionErrors"></span></p>
 </div>
 
@@ -319,7 +319,7 @@ Accuracy &amp; &amp; &amp;<br />
 </ul>
 
 <div class="figure">
-<embed src="figs/SMTimeComparison.png" />
+<img src="figs/SMTimeComparison.png" />
 <p class="caption">Processing time of smart meters in 5 different privacy preserving approaches.<span data-label="fig:SMTimeComparison"></span></p>
 </div>
 
@@ -328,7 +328,7 @@ Accuracy &amp; &amp; &amp;<br />
 <p>Each scenario was executed 10 times and the average values were considered. This amount of repetitions were enough to get precise average values. Due to the very low obtained variations, the confidence intervals are being omitted here, except for the aggregation in the approach proposed by Busom <em>et al</em>. <span class="citation">(Busom et al. 2015)</span>, which needs a trial and error mechanism to solve the discrete logarithm problem. The confidence intervals in these cases are of 95%.</p>
 
 <div class="figure">
-<embed src="figs/AGTimeComparison.png" />
+<img src="figs/AGTimeComparison.png" />
 <p class="caption">Processing time of the aggregator in 5 different privacy preserving approaches.<span data-label="fig:AGTimeComparison"></span></p>
 </div>
 
@@ -564,7 +564,7 @@ In-home feedback tools: estimated bills, device profiles etc <span class="citati
 </strong></strong></strong></strong></p>
 
 <div class="figure">
-<embed src="figs/filterDifferentGranularity.png" />
+<img src="figs/filterDifferentGranularity.png" />
 <p class="caption">Filtering parameter (<span class="math inline"><em>P</em></span>) for different measurement granularities. The confidence intervals are of 95%.<span data-label="fig:filterDifferentGranularity"></span></p>
 </div>
 
@@ -623,40 +623,40 @@ In-home feedback tools: estimated bills, device profiles etc <span class="citati
 <p>We also performed some <em>NIALM</em> attacks and the results were evaluated. Figure [fig:nialmWorkflow] presents the workflow of this testing procedure. The noise addition approach is applied in the green task, whereas in the orange boxes, we applied the Improved <em>NIALM</em> using <em>load DIvision and Calibration</em> (<em>INDIC</em>) algorithm <span class="citation">(Batra, Dutta, and Singh 2013)</span>.</p>
 
 <div class="figure">
-<embed src="figs/nialmWorkflow.png" />
+<img src="figs/nialmWorkflow.png" />
 <p class="caption">Workflow for privacy validation through <em>NIALM</em> attacks.<span data-label="fig:nialmWorkflow"></span></p>
 </div>
 
 <div class="figure">
-<embed src="figs/weeklyProfile.png" />
+<img src="figs/weeklyProfile.png" />
 <p class="caption">Example week obtained from the <em>REDD</em> dataset (measurements are at each 1 minute).<span data-label="fig:weeklyProfile"></span></p>
 </div>
 
 <p>Figure [fig:weeklyProfile] presents a weekly profile obtained from the popular <em>REDD</em> dataset <span class="citation">(Kolter and Johnson 2011)</span>. In this profile, there are many appliances being used, such as a microwave and a refrigerator. Figure [fig:microwave] presents the real disaggregated microwave profile. A microwave was chosen as an example because in this profile it is a very characteristic appliance and one of the most difficult to be hidden (since it has many peak variations).</p>
 
 <div class="figure">
-<embed src="figs/microwave.png" />
+<img src="figs/microwave.png" />
 <p class="caption">Real disaggregated microwave obtained from profile of Figure [fig:weeklyProfile].<span data-label="fig:microwave"></span></p>
 </div>
 
 <p>After applying the <em>INDIC</em> algorithm to perform <em>NIALM</em> on the profile from Figure [fig:weeklyProfile], the appliances were disaggregated. Figure [fig:predictedMicrowave] presents the predicted microwave profile. As observed, this predicted profile is very similar with the real microwave profile (at least the peak moments and levels are almost the same).</p>
 
 <div class="figure">
-<embed src="figs/predictedMicrowave.png" />
+<img src="figs/predictedMicrowave.png" />
 <p class="caption">Disaggregated microwave predicted by <em>INDIC</em> over profile of Figure [fig:weeklyProfile].<span data-label="fig:predictedMicrowave"></span></p>
 </div>
 
 <p>We applied our noise addition approach and using an allowed error of (<span class="math inline"><em>e</em><sub><em>a</em></sub></span>) of 5% to mask the aggregated profile from Figure [fig:weeklyProfile], the masked profile from Figure [fig:weeklyMaskedProfile] was obtained. Because negative demand values are impossible and <em>NIALM</em> tools can not work with that, we vertically shifted the profile to perform the <em>NIALM</em> attack. This modification was simply the addition of the absolute minimum value to every measurement of the profile, i.e., <span class="math inline">∀<em>c</em> ∈ <em>P</em></span>, we made <span class="math inline"><em>c</em> = <em>c</em> + |<em>m</em><em>i</em><em>n</em>(<em>P</em>)|</span>, where <span class="math inline"><em>P</em></span> is the profile and <span class="math inline"><em>c</em></span> is an individual measurement. For the <em>NIALM</em> algorithm, this procedure should be the same as considering that an appliance which demands <span class="math inline">|<em>m</em><em>i</em><em>n</em>(<em>P</em>)|</span> was always on usage.</p>
 
 <div class="figure">
-<embed src="figs/weeklyMaskedProfile.png" />
+<img src="figs/weeklyMaskedProfile.png" />
 <p class="caption">Aggregated profile of Figure [fig:weeklyProfile] masked using <span class="math inline"><em>e</em><sub><em>a</em></sub></span> of 5%.<span data-label="fig:weeklyMaskedProfile"></span></p>
 </div>
 
 <p>After applying the same <em>INDIC</em> algorithm to perform the <em>NIALM</em>, we observed that the technique lost significantly its ability to detect appliance usages. Figure [fig:predictedMaskedMicrowave] presents the predicted microwave profile by the <em>INDIC</em> algorithm applied on the masked profile from Figure [fig:weeklyMaskedProfile].</p>
 
 <div class="figure">
-<embed src="figs/predictedMaskedMicrowave.png" />
+<img src="figs/predictedMaskedMicrowave.png" />
 <p class="caption">Disaggregated microwave predicted by <em>INDIC</em> over the masked profile of Figure [fig:weeklyMaskedProfile].<span data-label="fig:predictedMaskedMicrowave"></span></p>
 </div>
 
@@ -956,6 +956,9 @@ Refrigerator &amp; 70.17 &amp; 143.34 &amp; 216.79 &amp; 189.67<br />
 <p>Figure [fig:smartmeteringgsn4] presented the <em>GSN</em> for the privacy case of a smart metering application considering the mentioned adversary model. This representation is still to grow, according to the normal software evolution and our proposed methodology. In this application context, assuming that security assurances have been taken and thay the sensor is not an adversary, there is an argument that the privacy is being preserved according to the provided evidences. Every evidence has an identification to enable the traceability into the corresponding artifacts. There are other smart energy meter solutions such as OPower<a href="#fn11" class="footnoteRef" id="fnref11"><sup>11</sup></a> and Eyedro<a href="#fn12" class="footnoteRef" id="fnref12"><sup>12</sup></a>, however, we claim that LiteMe is the first application to consider techniques to preserve users’ privacy.</p>
 <p>After validating the <em>Privacy by Evidence</em> (<em>PbE</em>) through a case study of a smart metering application, we conclude that this methodology can be regarded as an effective way to implement privacy protections mechanism. Seven privacy evidences were provided and the sum of their weights results in 28. Therefore, we positively support the research question <span class="math inline"><em>R</em><em>Q</em>1</span>. It is important to note that such mitigations must be an iterative work, and thus the stages in the methodology must happen in a constant cycle, once new risks can always be detected.</p>
 
+<div class="footnotes">
+<hr />
+<ol>
 <li id="fn1"><p><a href="http://liteme.com.br" class="uri">http://liteme.com.br</a><a href="#fnref1">↩</a></p></li>
 <li id="fn2"><p><a href="http://www.smartiks.com" class="uri">http://www.smartiks.com</a><a href="#fnref2">↩</a></p></li>
 <li id="fn3"><p>Combining appliance signatures it is possible to generate arbitrary large populations and measurement frequency. Several databases of appliance signatures are available online (<em>e.g.</em>, Tracebase <span class="citation">(Reinhardt et al. 2012)</span>).<a href="#fnref3">↩</a></p></li>
@@ -968,3 +971,5 @@ Refrigerator &amp; 70.17 &amp; 143.34 &amp; 216.79 &amp; 189.67<br />
 <li id="fn10"><p>The Pearson correlation coefficient is a measure of the linear dependence between two variables. It has a value between +1 and -1 inclusive, where 1 is total positive linear correlation, 0 is no linear correlation, and -1 is total negative linear correlation.<a href="#fnref10">↩</a></p></li>
 <li id="fn11"><p>Opower, opower.com<a href="#fnref11">↩</a></p></li>
 <li id="fn12"><p>Eyedro, eyedro.com<a href="#fnref12">↩</a></p></li>
+</ol>
+</div>
