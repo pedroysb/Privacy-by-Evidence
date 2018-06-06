@@ -2,7 +2,7 @@
 
 # Case Study I: Smart Metering
 
-<p>In this section, we present the first case study, a smart metering application which uses information regarding energy consumption. Although the main objective is to validate the <em>PbE</em>, we believe that the results presented in this chapter are of importance for the smart metering area. These results were to be applied in the LiteMe<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> application, a project developed by the Smartiks<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> company in partnership with the <em>Federal University of Campina Grande</em> (<em>UFCG</em>).</p>
+<p>In this section, we present the first case study, a smart metering application which uses information regarding energy consumption. Although the main objective is to validate the <em>PbE</em>, we believe that the results presented in this section are of importance for the smart metering area. These results were to be applied in the LiteMe<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> application, a project developed by the Smartiks<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> company in partnership with the <em>Federal University of Campina Grande</em> (<em>UFCG</em>).</p>
 <h2 id="context-and-data-formats">Context and Data Formats</h2>
 <p>Smart Grids are systems that combine the traditional power grid with modern information technologies to enable a more efficient and robust grid. With these systems, power providers can monitor, analyze and control the network and communicate with the consumers to improve the energy quality, reduce energy consumption and cost, and maximize the transparency and reliability of the energy supply chain. In this scenario, a key component on the consumers’ side is the use of smart meters.</p>
 
@@ -338,7 +338,7 @@ Accuracy &amp; &amp; &amp;<br />
 
 
 
-<p>Although estimation through asymptotic complexity is a good way to estimate computational complexity, we claim that experimental analysis is essential to present concrete results when comparing different proposals. Therefore, we implemented simulators<a href="#fn6" class="footnoteRef" id="fnref6"><sup>6</sup></a> in the <em>C</em> programming language. These simulators make use of a few functions from the <em>libgmp</em><a href="#fn7" class="footnoteRef" id="fnref7"><sup>7</sup></a>, <em>libpaillier</em><a href="#fn8" class="footnoteRef" id="fnref8"><sup>8</sup></a> and <em>libcrypto</em><a href="#fn9" class="footnoteRef" id="fnref9"><sup>9</sup></a> libraries to implement algorithms that mimic the protocols described in this chapter and in Appendix [ap:rb_he]. The simulators were executed in a machine with 1.6 GHz Intel Core i5 processor, 6 GB of RAM memory and the Ubuntu 14.04 operating system.</p>
+<p>Although estimation through asymptotic complexity is a good way to estimate computational complexity, we claim that experimental analysis is essential to present concrete results when comparing different proposals. Therefore, we implemented simulators<a href="#fn6" class="footnoteRef" id="fnref6"><sup>6</sup></a> in the <em>C</em> programming language. These simulators make use of a few functions from the <em>libgmp</em><a href="#fn7" class="footnoteRef" id="fnref7"><sup>7</sup></a>, <em>libpaillier</em><a href="#fn8" class="footnoteRef" id="fnref8"><sup>8</sup></a> and <em>libcrypto</em><a href="#fn9" class="footnoteRef" id="fnref9"><sup>9</sup></a> libraries to implement algorithms that mimic the protocols described in this section and in Appendix [ap:rb_he]. The simulators were executed in a machine with 1.6 GHz Intel Core i5 processor, 6 GB of RAM memory and the Ubuntu 14.04 operating system.</p>
 <p>In our simulations, using different configuration scenarios (number of meters, ranging from 1 to 200) to calculate the total consumption in the region, we measured the processing time of each meter (Figure 13) and the aggregator (Figure 14).</p>
 
 <div class="figure">
@@ -912,7 +912,7 @@ Refrigerator &amp; 70.17 &amp; 143.34 &amp; 216.79 &amp; 189.67<br />
 </div>
 
 <h2 id="concluding-remarks">Concluding Remarks</h2>
-<p>In this chapter, we validated the <em>Privacy by Evidence</em> (<em>PbE</em>) methodology through a case study of a smart metering application. Table [tab:checklistsmartmetering] shows the checklist with the collected artifacts in this case study. We did not conduct any perception study in the risk assessment, however, in the next chapters, we present examples of such studies.</p>
+<p>We validated the <em>Privacy by Evidence</em> (<em>PbE</em>) methodology through a case study of a smart metering application. Table [tab:checklistsmartmetering] shows the checklist with the collected artifacts in this case study.</p>
 
 <table>
 <caption>Checklist of the artifacts produced in the smart metering case study.<span data-label="tab:checklistsmartmetering"></span></caption>
