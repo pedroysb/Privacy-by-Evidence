@@ -64,33 +64,55 @@
 
 <h2 id="sec:smrisk">Utilities and Risk Assessment</h2>
 <p>For the risk assessment, first we identified what is possible to do with the collected energy data. Since individual values (such as the consumption of a house in an instant of time) are more sensitive than aggregate values (such as the total consumption in a region with <span class="math inline"><em>N</em></span> consumers, or the total consumption of a house in the end of a billing period), the privacy techniques need to focus on hiding individual values.</p>
-<p>Many utilities that use metering data were listed in Table [tab:utilities1]. From this list, using a risk binary scale, “load forecasting for individual consumers”, “individual data analytics” and “demand-based rates” were considered as privacy threats that needed to be solved. This classification is based on the usage of individual values. The check if a utility uses individual values (and thus if it is a privacy risk) can be found in the references.</p>
+<p>Many utilities that use metering data were listed in Table 5. From this list, using a risk binary scale, “load forecasting for individual consumers”, “individual data analytics” and “demand-based rates” were considered as privacy threats that needed to be solved. This classification is based on the usage of individual values. The check if a utility uses individual values (and thus if it is a privacy risk) can be found in the references.</p>
 <p>Unfortunately, “demand-based rates” may be a legitimate utility but regarded as a privacy risk. Power providers would charge based on the instantaneous power, but to do that, it is necessary to know the individual measurements.</p>
 
-<p><span>c|c</span> <strong>Feature / Benefit &amp;</strong></p>
 <table>
-<caption>List of metering data utilities.<span data-label="tab:utilities1"></span></caption>
-<tbody>
-<tr class="odd">
-<td align="left"><strong>Privacy</strong></td>
-</tr>
-<tr class="even">
-<td align="left"><strong>Risk?</strong></td>
-</tr>
-</tbody>
+  <caption>Table 5: List of metering data utilities.</caption>
+  <tr>
+    <td align="center" style='font-weight:bold;'>Feature / Benefit</td>
+    <td align="center" style='font-weight:bold;'>Privacy Risk?</td>
+  </tr>
+  <tr>
+    <td align="center" >Billing optimization <span class="citation">(Barbosa et al. 2014)</span></td>
+    <td align="center" color="green">No</td>
+  </tr>
+  <tr>
+    <td align="center" Load monitoring and management for specific groups or regions <span class="citation">(Barbosa et al. 2014)</span></td>
+    <td align="center" color="green">No</td>
+  </tr>
+  <tr>
+    <td align="center" >Energy theft/losses detection <span class="citation">(Anas et al. 2012)</span></td>
+    <td align="center" color="green">No</td>
+  </tr>
+  <tr>
+    <td align="center" >Load forecasting for specific groups or regions <span class="citation">(Ilić et al. 2013)</span></td>
+    <td align="center" color="green">No</td>
+  </tr>
+  <tr>
+    <td align="center" >Load forecasting for individual consumers <span class="citation">(Ilić et al. 2013)</span></td>
+    <td align="center" color="orange">Yes</td>
+  </tr>
+  <tr>
+    <td align="center" >Time-based rates (<em>e.g.</em>, different prices based on time of day and season) <span class="citation">(Barbosa et al. 2014)</span></td>
+    <td align="center" color="green">No</td>
+  </tr>
+  <tr>
+    <td align="center" >Demand-based rates (<em>e.g.</em> different prices based on demand levels) <span class="citation">(Procel 2011)</span></td>
+    <td align="center" color="orange">Yes</td>
+  </tr>
+  <tr>
+    <td align="center" >Individual data analytics (<em>e.g.</em> <em>NIALM</em> and marketers) <span class="citation">(Barbosa, Brito, and Almeida 2015; NIST 2014)</span></td>
+    <td align="center" color="orange">Yes</td>
+  </tr>
+  <tr>
+    <td align="center" >In-home feedback tools: estimated bills, device profiles etc <span class="citation">(Ying-Xun et al. 2013)</span></td>
+    <td align="center" color="green">No</td>
+  </tr>
 </table>
-<p><br />
-Billing optimization <span class="citation">(Barbosa et al. 2014)</span> &amp; No<br />
-Load monitoring and management for specific groups or regions <span class="citation">(Barbosa et al. 2014)</span> &amp; No<br />
-Energy theft/losses detection <span class="citation">(Anas et al. 2012)</span> &amp; No<br />
-Load forecasting for specific groups or regions <span class="citation">(Ilić et al. 2013)</span> &amp; No<br />
-Load forecasting for individual consumers <span class="citation">(Ilić et al. 2013)</span> &amp; Yes<br />
-Time-based rates (<em>e.g.</em>, different prices based on time of day and season) <span class="citation">(Barbosa et al. 2014)</span> &amp; No<br />
-Demand-based rates (<em>e.g.</em> different prices based on demand levels) <span class="citation">(Procel 2011)</span> &amp; Yes<br />
-Individual data analytics (<em>e.g.</em> <em>NIALM</em> and marketers) <span class="citation">(Barbosa, Brito, and Almeida 2015; NIST 2014)</span> &amp; Yes<br />
-In-home feedback tools: estimated bills, device profiles etc <span class="citation">(Ying-Xun et al. 2013)</span> &amp; No<br />
-</p>
+
 <h3 id="adversary-model">Adversary Model</h3>
+
 <p>In the smart metering privacy literature, it is common to consider the power provider as an adversary (honest, but curious) and, transitively, the data exposure to third parties becomes a threat to privacy too. Therefore, it is resonable to consider the power provider as an adversary and to apply the privacy techniques on the consumers’ side <span class="citation">(Busom et al. 2015; Erkin and Tsudik 2012; Garcia and Jacobs 2010; Backes and Meiser 2014; Kalogridis et al. 2010; McLaughlin, McDaniel, and Aiello 2011; Zhao et al. 2014; Backes and Meiser 2014; Kalogridis et al. 2010; McLaughlin, McDaniel, and Aiello 2011; Zhao et al. 2014)</span>. Figure 9 presents the second iteration of the construction of the <em>GSN</em> representation for this case study. The diagram now considers the adversary model, <em>i.e.</em>, the assumption that the sensor is not an adversary and the strategy to provide mitigations considering that the service is an adversary.</p>
 
 <div class="figure">
