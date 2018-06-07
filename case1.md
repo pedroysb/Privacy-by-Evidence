@@ -142,9 +142,7 @@
   where <span class="math inline"><em>N</em></span> is the total number of measurements, <span class="math inline"><em>x</em><sub><em>i</em></sub></span> is a random number generated from a probabilistic distribution and <span class="math inline"><em>c</em><sub><em>i</em></sub></span> is an individual consumption measurement.</p>
 <p>The previous formalization can also be rewritten as follows: </p><br />
 
-# test!
-
-$$\sum_{i=1}^N c_i\ =\ \sum_{i=1}^N \left( c_i\ +\ x_i \right)\ -\ e_o$$
+<img src="https://latex.codecogs.com/gif.latex?e_o&space;\sim&space;N\left(0,&space;2&space;N&space;b&space;^&space;2\right)&space;\text{&space;.}" />
   
   <br /> 
 <p>where <span class="math inline"><em>e</em><sub><em>o</em></sub></span> is the obtained error by the addition of random numbers. Therefore, <span class="math inline"><em>e</em><sub><em>o</em></sub></span> is the sum of all added random values: <br /><span class="math display">$$e_o\ =\ \sum_{i=1}^N x_i \text{ .}$$</span><br /></p>
