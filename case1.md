@@ -75,39 +75,39 @@
   </tr>
   <tr>
     <td align="center" >Billing optimization <span class="citation">(Barbosa et al. 2014)</span></td>
-    <td align="center" color="green">No</td>
+    <td align="center" style="color:green">No</td>
   </tr>
   <tr>
-    <td align="center" Load monitoring and management for specific groups or regions <span class="citation">(Barbosa et al. 2014)</span></td>
-    <td align="center" color="green">No</td>
+    <td align="center" >Load monitoring and management for specific groups or regions <span class="citation">(Barbosa et al. 2014)</span></td>
+    <td align="center" style="color:green">No</td>
   </tr>
   <tr>
     <td align="center" >Energy theft/losses detection <span class="citation">(Anas et al. 2012)</span></td>
-    <td align="center" color="green">No</td>
+    <td align="center" style="color:green">No</td>
   </tr>
   <tr>
     <td align="center" >Load forecasting for specific groups or regions <span class="citation">(Ilić et al. 2013)</span></td>
-    <td align="center" color="green">No</td>
+    <td align="center" style="color:green">No</td>
   </tr>
   <tr>
     <td align="center" >Load forecasting for individual consumers <span class="citation">(Ilić et al. 2013)</span></td>
-    <td align="center" color="orange">Yes</td>
+    <td align="center" style="color:orange">Yes</td>
   </tr>
   <tr>
     <td align="center" >Time-based rates (<em>e.g.</em>, different prices based on time of day and season) <span class="citation">(Barbosa et al. 2014)</span></td>
-    <td align="center" color="green">No</td>
+    <td align="center" style="color:green">No</td>
   </tr>
   <tr>
     <td align="center" >Demand-based rates (<em>e.g.</em> different prices based on demand levels) <span class="citation">(Procel 2011)</span></td>
-    <td align="center" color="orange">Yes</td>
+    <td align="center" style="color:orange">Yes</td>
   </tr>
   <tr>
     <td align="center" >Individual data analytics (<em>e.g.</em> <em>NIALM</em> and marketers) <span class="citation">(Barbosa, Brito, and Almeida 2015; NIST 2014)</span></td>
-    <td align="center" color="orange">Yes</td>
+    <td align="center" style="color:orange">Yes</td>
   </tr>
   <tr>
     <td align="center" >In-home feedback tools: estimated bills, device profiles etc <span class="citation">(Ying-Xun et al. 2013)</span></td>
-    <td align="center" color="green">No</td>
+    <td align="center" style="color:green">No</td>
   </tr>
 </table>
 
