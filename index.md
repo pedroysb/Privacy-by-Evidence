@@ -1,4 +1,6 @@
-# Welcome to Privacy by Evidence Website
+![alt text](https://pedroysb.github.io/Privacy-by-Evidence/figs/pbe-logo.png "Privacy by Evidence")
+
+# Welcome
 
 <p style="color:red;">This site is under construction.</p>
 
