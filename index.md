@@ -1,4 +1,4 @@
-![alt text](https://pedroysb.github.io/Privacy-by-Evidence/figs/pbe-logo.png "Privacy by Evidence")
+<p><img src="Privacy-by-Evidence/figs/pbe-logo.png" width="50%" class="center"></p>
 
 # Welcome
 
