@@ -1,4 +1,6 @@
-<p><img src="Privacy-by-Evidence/figs/pbe-logo.png" width="50%" class="center"></p>
+<p align="center">
+  <img src="figs/pbe-logo.png" width="50%" title="Privacy by Evidence">
+</p>
 
 # Welcome
 
